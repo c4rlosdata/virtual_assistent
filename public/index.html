@@ -1,0 +1,40 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel de ADM - Dibrownie</title>
+  <meta name="description" content="A página de mensagens webhook do Dibrownie, exibindo as últimas mensagens recebidas.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <h1>Dibrownie</h1>
+    </div>
+    <div class="header-icons">
+      <!-- Ícone de gráfico existente -->
+      <a href="#" class="icon-link">
+        <img src="icone_grafico.png" alt="Ícone de Gráfico" id="header-icon" width="50" height="50">
+      </a>
+    </div>
+  </header>
+
+  <section class="messages-section">
+    <h2>Assistente Virtual DI</h2>
+    <div class="search-bar">
+      <input type="text" placeholder="Procurar contatos" id="search-input" aria-label="Buscar contatos">
+    </div>
+    <div class="messages-grid" id="messages-grid">
+      <p id="loading-message">Carregando mensagens...</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2024 Nexus</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

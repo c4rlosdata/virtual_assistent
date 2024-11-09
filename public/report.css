@@ -1,0 +1,247 @@
+/* styles.css atualizado */
+
+/* Estilos gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1d1d1d;
+  color: #fff;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #333;
+  padding: 10px 20px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  color: white;
+}
+
+/* Estilo do ícone de home */
+.home-icon {
+  margin-right: 20px;
+}
+
+.home-icon img {
+  width: 30px;  /* Tamanho do ícone ajustado */
+  height: 30px; /* Tamanho do ícone ajustado */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.home-icon img:hover {
+  transform: scale(1.1); /* Leve aumento ao passar o mouse */
+}
+
+/* Seção do título do relatório */
+.report-title-section {
+  text-align: center; /* Centralizar o título */
+  padding: 20px;
+}
+
+.report-title-section h2 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* Seção do relatório */
+.report-section {
+  padding: 20px;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto; /* Centralizar horizontalmente */
+}
+
+#interactionChart {
+  max-width: 100%;
+  width: 90vw; /* Ajustar largura para ocupar a maior parte possível */
+  height: 50vh; /* Altura adaptada ao tamanho da janela */
+  max-height: 500px; /* Limitar a altura máxima do gráfico */
+  padding: 10px;
+  background-color: #2a2a2a; /* Fundo para combinar com o tema */
+  border-radius: 10px;
+}
+
+/* Seção de filtro */
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-section label {
+  margin-right: 10px;
+  color: #fff;
+}
+
+.filter-section select, .filter-section input {
+  padding: 5px;
+  margin: 5px;
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 5px;
+}
+
+#apply-filter {
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#apply-filter:hover {
+  background-color: #555;
+}
+
+/* Estilo para mensagens de erro */
+.error-message {
+  color: #ff6b6b;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* Estilo do footer */
+.footer {
+  background-color: #333;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+  font-size: 0.9rem;
+  position: relative;
+  width: 100%;
+}
+
+/* Ajuste do layout para telas menores */
+@media (max-width: 600px) {
+  .report-section {
+      padding: 10px;
+  }
+
+  .report-title-section {
+      padding: 10px;
+  }
+
+  .report-title-section h2 {
+      font-size: 1.5rem;
+  }
+
+  #interactionChart {
+      width: 95vw; /* Ajustar o gráfico para ocupar a largura disponível */
+      height: 300px; /* Altura para telas menores */
+  }
+
+  /* Ajuste nos rótulos do gráfico */
+  .chart-label {
+      font-size: 0.9rem; /* Reduzir o tamanho da fonte dos rótulos */
+      transform: rotate(0deg); /* Deixar os rótulos verticais para melhor visualização em dispositivos móveis */
+      text-align: center; /* Centralizar o texto dos rótulos */
+  }
+}
+
+
+/* Estilos para o container de conversas */
+.conversations-container {
+  padding: 20px;
+}
+
+.back-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #555;
+}
+
+/* Barra de pesquisa */
+#search-input-reports {
+  padding: 10px;
+  width: 300px;
+  border-radius: 20px;
+  border: 2px solid #f47b20;
+  font-size: 1rem;
+  background-color: #2a2a2a;
+  color: #fff;
+  outline: none;
+  transition: box-shadow 0.3s ease, border 0.3s ease;
+  margin-bottom: 20px;
+}
+
+#search-input-reports::placeholder {
+  color: #999;
+}
+
+#search-input-reports:focus {
+  border: 2px solid #ff9c35;
+  box-shadow: 0 0 10px rgba(255, 156, 53, 0.5);
+}
+
+/* Grid de mensagens */
+.messages-grid {
+  display: grid;
+  gap: 20px;
+}
+
+/* Card de contato */
+.contact-card {
+  background-color: #3a3a3a;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #555;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card h3 {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.contact-card p {
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* Data/Hora da Última Mensagem */
+.message-time {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 0.85rem;
+  color: #bbb;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Relatórios - Dibrownie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="report.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <h1>Dibrownie</h1>
+    </div>
+    <div class="home-icon">
+      <a href="index.html">
+        <img src="home_icon.png" alt="Ícone de Início" width="24" height="24">
+      </a>
+    </div>
+  </header>
+
+  <section class="report-title-section">
+    <h2>Relatórios de Interações</h2>
+  </section>
+
+  <!-- Adicionando a seção de filtro -->
+  <section class="filter-section">
+    <label for="time-filter">Filtrar por Tempo:</label>
+    <select id="time-filter">
+      <option value="15min">15 minutos</option>
+      <option value="1h">1 hora</option>
+      <option value="3h">3 horas</option>
+      <option value="1d">1 dia</option>
+      <option value="7d">7 dias</option>
+      <option value="30d">1 mês</option>
+      <option value="custom">Intervalo Personalizado</option>
+    </select>
+
+    <div id="custom-time-range" style="display:none;">
+      <label for="start-time">De:</label>
+      <input type="datetime-local" id="start-time">
+      <label for="end-time">Até:</label>
+      <input type="datetime-local" id="end-time">
+    </div>
+    <button id="apply-filter">Aplicar Filtro</button>
+  </section>
+
+  <section class="report-section">
+    <canvas id="interactionChart"></canvas>
+  </section>
+
+  <footer class="footer">
+    <p>© 2024 Nexus</p>
+  </footer>
+
+  <script src="reports.js"></script>
+</body>
+</html>

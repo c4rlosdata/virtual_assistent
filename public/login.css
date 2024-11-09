@@ -1,0 +1,81 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1d1d1d;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adicionei um espaço entre os campos */
+}
+
+/* Estilo dos Inputs "Usuário" e "Senha" */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    height: 46px;
+    padding: 0 16px;
+    border: 1px solid #444444;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background-color: #2b2b2b;
+    color: #94a3b8;
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    outline: none;
+}
+
+input::placeholder {
+    color: #b0b0b0;
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    opacity: 1;
+}
+
+/* Estilo do Botão de Login */
+.button {
+    cursor: pointer;
+    width: 100%; /* Ajustar para ocupar toda a largura do contêiner */
+    height: 44px;
+    padding: 0 8px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background-color: #f97316;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    line-height: 20px;
+    outline: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #fb923c; /* Alteração na cor ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação */
+}
+
+.button:active {
+    transform: translateY(0); /* Remove o efeito de elevação ao clicar */
+}

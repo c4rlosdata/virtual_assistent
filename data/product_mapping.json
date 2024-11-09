@@ -1,0 +1,84 @@
+{
+    "197505565": {
+      "produto_id": 197505565,
+      "tabela_preco_id": 0
+    },
+    "197486763": {
+      "produto_id": 197486763,
+      "tabela_preco_id": 0
+    },
+    "197505714": {
+      "produto_id": 197505714,
+      "tabela_preco_id": 0
+    },
+    "197505566": {
+      "produto_id": 197505566,
+      "tabela_preco_id": 0
+    },
+    "197505715": {
+      "produto_id": 197505715,
+      "tabela_preco_id": 0
+    },
+
+    "5": {
+      "produto_id": 197505565,
+      "tabela_preco_id": 3158530
+    },
+    "4": {
+      "produto_id": 197486763,
+      "tabela_preco_id": 3158530
+    },
+    "2": {
+      "produto_id": 197505714,
+      "tabela_preco_id": 3158530
+    },
+    "1": {
+      "produto_id": 197505566,
+      "tabela_preco_id": 3158530
+    },
+    "3": {
+      "produto_id": 197505715,
+      "tabela_preco_id": 3158530
+    },
+    "15": {
+      "produto_id": 197505565,
+      "tabela_preco_id": 3158529
+    },
+    "14": {
+      "produto_id": 197486763,
+      "tabela_preco_id": 3158529
+    },
+    "12": {
+      "produto_id": 197505714,
+      "tabela_preco_id": 3158529
+    },
+    "11": {
+      "produto_id": 197505566,
+      "tabela_preco_id": 3158529
+    },
+    "13": {
+      "produto_id": 197505715,
+      "tabela_preco_id": 3158529
+    },
+    "202415126": {
+      "produto_id": 202415126,
+      "tabela_preco_id": 3166880
+    },
+    "202415123": {
+      "produto_id": 202415123,
+      "tabela_preco_id": 3166880
+    },
+    "202415128": {
+      "produto_id": 202415128,
+      "tabela_preco_id": 3166880
+    },
+    "202415127": {
+      "produto_id": 202415127,
+      "tabela_preco_id": 3166880
+    },
+    "202415129": {
+      "produto_id": 202415129,
+      "tabela_preco_id": 3166880
+    }
+  }
+  

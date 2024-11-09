@@ -1,0 +1,275 @@
+/* styles.css completo atualizado */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1d1d1d;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Cabeçalho geral */
+.header {
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo e título */
+.header .logo h1 {
+  color: white;
+  margin-left: 20px;
+}
+
+/* Ícones no cabeçalho */
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-icons img,
+.home-button img {
+  width: 30px; /* Ajustando o tamanho dos ícones para serem iguais */
+  height: 30px; /* Ajustando o tamanho dos ícones para serem iguais */
+  transition: transform 0.3s ease; /* Transição suave ao escalar o ícone */
+  cursor: pointer;
+}
+
+/* Efeito ao passar o mouse nos ícones */
+.header-icons img:hover,
+.home-button img:hover {
+  transform: scale(1.1); /* Leve aumento ao passar o mouse */
+}
+
+/* Seção de mensagens na página inicial */
+.messages-section {
+  padding: 20px;
+}
+
+.messages-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* Barra de pesquisa */
+.search-bar {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 20px;
+  border: 2px solid #f47b20;
+  font-size: 1rem;
+  background-color: #2a2a2a;
+  color: #fff;
+  outline: none;
+  transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.search-bar input::placeholder {
+  color: #999;
+}
+
+.search-bar input:focus {
+  border: 2px solid #ff9c35;
+  box-shadow: 0 0 10px rgba(255, 156, 53, 0.5);
+}
+
+/* Grid de mensagens */
+.messages-grid {
+  display: grid;
+  gap: 20px;
+}
+
+/* Card de contato */
+.contact-card {
+  background-color: #3a3a3a;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #555;
+  position: relative; /* Para permitir posicionar a hora dentro do card */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card h3 {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.contact-card p {
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* Data/Hora da Última Mensagem */
+.message-time {
+  position: absolute;
+  top: 20px; /* Alinha ao topo do card */
+  right: 20px; /* Alinha à direita do card */
+  font-size: 0.85rem;
+  color: #bbb;
+}
+
+/* Botão Ver */
+.view-button {
+  background-color: #f47b20;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.view-button:hover {
+  background-color: #ff9c35;
+}
+
+/* Rodapé */
+.footer {
+  background-color: #333;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+  font-size: 0.9rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Cabeçalho fixo do chat */
+.chat-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+/* Informação de contato no cabeçalho */
+.contact-info {
+  color: white;
+}
+
+.contact-info h1 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Botão Home no cabeçalho */
+.home-button {
+  display: flex;
+  align-items: center;
+}
+
+/* Seção de mensagens do chat */
+.chat-section {
+  padding-top: 80px; /* Espaço para o cabeçalho fixo */
+  padding-bottom: 60px; /* Espaço para o rodapé fixo, se houver */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para as mensagens */
+.message-bubble {
+  max-width: 60%;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border-radius: 20px;
+  position: relative;
+  font-size: 0.95rem;
+  word-wrap: break-word;
+  display: inline-block;
+}
+
+.message-bubble.user {
+  background-color: #dcf8c6;
+  color: #000;
+  align-self: flex-end;
+  border: 1px solid #cdeccd;
+  border-bottom-right-radius: 0;
+}
+
+.message-bubble.bot {
+  background-color: #ffffff;
+  color: #000;
+  align-self: flex-start;
+  border: 1px solid #dcdcdc;
+  border-bottom-left-radius: 0;
+}
+
+.message-date {
+  font-size: 0.75rem;
+  color: #555;
+  text-align: right;
+  margin-top: 5px;
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 600px) {
+  .search-bar input {
+    width: 100%;
+  }
+
+  .contact-card {
+    padding: 15px;
+  }
+
+  .message-bubble {
+    max-width: 80%;
+  }
+
+  .contact-info h1 {
+    font-size: 1.2rem;
+  }
+
+  .contact-info p {
+    font-size: 0.9rem;
+  }
+
+  .home-button img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .chat-section {
+    padding-top: 70px; /* Ajuste se necessário */
+  }
+}
